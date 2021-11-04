@@ -1,0 +1,31 @@
+.hero {
+background-image: url("/Users/jchoy/Desktop/projects/challenge-project-02/assets/images/youmu!.jpg");
+width: 620px;
+height: 443px;
+border: rgb(45, 202, 124);
+object-position: center;
+}
+
+.hero p { text-align: right;
+    padding: 20px 20px 20px 20px;
+
+}
+.Profile {
+    color: rgb(45, 202, 124);
+}
+
+.Biography {
+    color: rgb(45, 202, 124);
+}
+
+.Biography p {
+    color: black;
+}
+
+.Selected-Works {
+    color: rgb(45, 202, 124);
+}
+
+.Selected-Works p {
+    color: black;
+}
