@@ -1,9 +1,16 @@
+:root {
+    --green:  rgb(45, 202, 124);
+}
 .hero {
-background-image: url("/Users/jchoy/Desktop/projects/challenge-project-02/assets/images/IMG_2992 (1).jpg");
+background-image: url("/Users/jchoy/Desktop/projects/challenge-project-02/assets/images/hero.jpg");
 width: 620px;
 height: 443px;
-border: rgb(45, 202, 124);
-flex: wrap;
+border-style: solid;
+border-width: 1px;
+border-radius: 10px;
+padding: 10px;
+flex: 0 0 400px;
+display: grid;
 }
 
 .hero p { text-align: right;
@@ -11,12 +18,12 @@ flex: wrap;
 
 }
 .Profile {
-    color: rgb(45, 202, 124);
+    color: var(--green);
     border: 20px 20px 20px 20px;
 }
 
 .About-Me {
-    color: rgb(45, 202, 124);
+    color: var(--green);
     border: 20px 20px 20px 20px;
 }
 
@@ -25,7 +32,7 @@ flex: wrap;
 }
 
 .Selected-Works {
-    color: rgb(45, 202, 124);
+    color: var(--green);
     border: 20px 20px 20px 20px;
 }
 
