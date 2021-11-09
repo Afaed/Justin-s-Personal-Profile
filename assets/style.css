@@ -61,6 +61,9 @@ font-weight: lighter;
 font-size: 1.55vw;
 }
 
+.flex-row{
+    display: flex;
+}
 header {
     padding: 20px;
   }
@@ -123,7 +126,15 @@ border-style: var(--size)
     border: 20px 20px 20px 20px;
 
 }
+.section {
+    padding-bottom: 20px;
 
+text-align: center;
+
+margin: 0 auto 35px auto;
+
+width: 50%
+}
 .About-Me p, .Selected-Works p, .Profile p {
     padding: 20px 45px;
 }
