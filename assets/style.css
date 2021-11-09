@@ -7,9 +7,12 @@
 body {
     font-family: Helvetica, Arial, sans-serif;
     background-color:rgb(51, 136, 216);
+    margin: autp;
+    border: auto;
+    padding: auto;
 }
 
-.header div {
+header div {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -20,6 +23,8 @@ body {
 header {
     padding: 22px 35px;
     background-color: gold;
+    flex: display;
+    justify-content: space-between;
 
 }
 header h1 {
@@ -27,7 +32,15 @@ header h1 {
     font-size: 36px;
     color: #00008b;
     margin: 0;
-    display: inline;}
+    }
+
+header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+      }
 
 header nav ul li {
     float: right;
@@ -37,14 +50,17 @@ header nav ul li {
 }
 
 header nav {
-    float: right;
     margin: 7px 0;
-    
 }
+
 header nav ul li a {
 color: #f08080;
 font-size: inherit;
+margin: 0 30px;
+font-weight: lighter;
+font-size: 1.55vw;
 }
+
 header {
     padding: 20px;
   }
