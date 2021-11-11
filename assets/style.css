@@ -92,15 +92,19 @@ header {
     box-sizing: border-box;
   }
 
-.box1, .box2, .box3{
+.box1 {
     background-color: ivory;
     width: 300px;
     border: 10px #daa520 solid;
-    padding: 50px;
-    margin: 20px}
+    padding: 15px;
+    margin: 20px;
+    box-shadow: 5px 5px 10px #808080;
+    position: relative; left:80px; top: 2px;
+
+    }
 
 .hero {
-background-image: url("/Users/jchoy/Documents/projects/challenge-project-02/assets/images/hero.jpg");
+background-image: url("./assets/images/hero.jpg");
 width: 620px;
 height: 443px;
 border-width: 1px;
@@ -116,11 +120,15 @@ border-style: var(--size)
     padding: 20px 20px 20px 20px;
 
 }
-.Profile {
+.Contact-me {
     color: var(--green);
     border: 20px 20px 20px 20px;
 }
-
+button {
+    background-color: #f08080;
+    opacity: 10;
+    position: -webkit-sticky;
+}
 .About-Me {
     color: var(--green);
     border: 20px 20px 20px 20px;
@@ -135,12 +143,11 @@ margin: 0 auto 35px auto;
 
 width: 50%
 }
-.About-Me p, .Selected-Works p, .Profile p {
+.About-Me p, .Selected-Works p, .Contact-me p {
     padding: 20px 45px;
 }
 
 .Selected-Works {
     color: var(--green);
-    border: 20px 20px 20px 20px;
+    border: 20px 20px 20px 20px
 }
-
