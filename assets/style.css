@@ -1,10 +1,11 @@
 :root {
-    --head: #f08080;
+    --head: #ff0000;
     --text: #000000;
-    --bordercolor: #add8e6;
+    --bordercolor: #ffd700;
     --size: solid;
     --20px: 20px, 20px, 20px, 20px;
-    --imgsetting:
+    --background: #fffff0;
+    --imgbackground: rgb(32, 116, 241);
 }
 
 body {
@@ -59,7 +60,6 @@ font-size: 40px;
 margin: 0 30px;
 font-weight: lighter;
 font-size: 1.55vw;
-float: right
 }
 
 .flex-row{
@@ -93,35 +93,46 @@ header {
     box-sizing: border-box;
   }
 
-.box1 {
-    background-color: ivory;
+  h2 {
+      color: var(--head);
+  }
+
+  h3 {
+      color: var(--bordercolor);
+  }
+.box1:hover {
+    width: auto;
+}
+  .box1 {
+    background-color: var(--background);
     width: 300px;
-    border: 10px #add8e6 solid;
+    border: 5px var(--bordercolor) solid;
     padding: 15px;
     margin: 20px;
-    box-shadow: 5px 5px 10px #808080;
+    box-shadow: 200px 200px 200px var(--bordercolor);
     position: relative; left: 600px; top: -10px;
-
+    text-align: left;
     }
 
 .box2 {
-    border: var(--bordercolor) solid;
+    border: 5px var(--bordercolor) solid;
     width: auto;
     bottom: auto;
     position: relative;
-    background-color: #f0f8ff;
+    background-color: #fffff0;
     top: 45px;
+    box-shadow: var(--bordercolor);
 }
 
 .hero {
 background-image: url("./images/hero.jpg");
-width: 620px;
-height: 600px;
+width: 550px;
+height: 550px;
 border-width: 1px;
 border-radius: 10px;
 padding: 10px;
 flex: 0 0 400px;
-border-style: var(--size)
+border-style: 10px var(--size)
 
 }
 
@@ -139,56 +150,58 @@ border-style: var(--size)
 }
 .section {
     padding-bottom: 20px;
-
-text-align: center;
-
-margin: 0 auto 35px auto;
-
-width: 50%
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%
 }
-.About-Me p, .Selected-Works p, .Contact-me p {
+  p {
     padding: 20px 45px;
     color: var(--text);
-    text-align: left;
+    float: left;
 }
 
 .Selected-Works {
     color: var(--text);
-    border: var(--20px);
+    border: 10px solid var(--bordercolor);
+
 }
 
-.images {
-    opacity: grey;
-  }
-
-.zard img, .youmu img {
+img {
     display: block;
-    height: 200px;
+    height: 75%;
     margin: 10px auto;
-    width: 250px;
+    width: auto;
     align-items: center;
-    order: -1;
     text-align: right;
+    float: left;
 }
 
 .zard, .myon {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
+    margin: 10px;
+    padding: 20px;
+    height: 250px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+    background-color: var(--imgbackground);
+    color: var(--text);
     font-size: large;
     display: flex;
 }
 
-.floatleft {
-
+img:hover {
+    height: 100%;
+    width: auto;
 }
-.image.big {
-    size: 30px;
-    opacity: inherit;
-  }
+
+.zard:hover, .myon:hover{
+    width: auto;
+    
+}
+.float-left, .float-right {
+        float: left;
+        margin-right: 25px;
+        float: right;
+        margin-left: 25px;
+}
 
 .footer p{
     color: var(--text)
