@@ -1,15 +1,16 @@
 :root {
-    --green:  rgb(45, 202, 124);
+    --head: #f08080;
     --text: #000000;
-    --size: solid   
+    --bordercolor: #add8e6;
+    --size: solid;
+    --20px: 20px, 20px, 20px, 20px;
+    --imgsetting:
 }
 
 body {
     font-family: Helvetica, Arial, sans-serif;
-    background-color:rgb(51, 136, 216);
-    margin: autp;
-    border: auto;
-    padding: auto;
+    background-image: url("./images/tech.jpg");
+    border: solid;
 }
 
 header div {
@@ -22,16 +23,15 @@ header div {
 
 header {
     padding: 22px 35px;
-    background-color: gold;
+    background-color: var(--bordercolor);
     flex: display;
-    justify-content: space-between;
 
 }
 header h1 {
     font-weight: bold;
     font-size: 36px;
-    color: #00008b;
     margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
 
 header nav ul {
@@ -54,11 +54,12 @@ header nav {
 }
 
 header nav ul li a {
-color: #f08080;
-font-size: inherit;
+color: var(--head);
+font-size: 40px;
 margin: 0 30px;
 font-weight: lighter;
 font-size: 1.55vw;
+float: right
 }
 
 .flex-row{
@@ -95,43 +96,45 @@ header {
 .box1 {
     background-color: ivory;
     width: 300px;
-    border: 10px #daa520 solid;
+    border: 10px #add8e6 solid;
     padding: 15px;
     margin: 20px;
     box-shadow: 5px 5px 10px #808080;
-    position: relative; left:80px; top: 2px;
+    position: relative; left: 600px; top: -10px;
 
     }
 
+.box2 {
+    border: var(--bordercolor) solid;
+    width: auto;
+    bottom: auto;
+    position: relative;
+    background-color: #f0f8ff;
+    top: 45px;
+}
+
 .hero {
-background-image: url("./assets/images/hero.jpg");
+background-image: url("");
 width: 620px;
-height: 443px;
+height: 600px;
 border-width: 1px;
 border-radius: 10px;
 padding: 10px;
 flex: 0 0 400px;
-display: ceter;
 border-style: var(--size)
 
 }
 
 .hero p { text-align: right;
-    padding: 20px 20px 20px 20px;
+    padding: var(--20px);
 
 }
 .Contact-me {
-    color: var(--green);
-    border: 20px 20px 20px 20px;
+    border: var(--20px)
 }
-button {
-    background-color: #f08080;
-    opacity: 10;
-    position: -webkit-sticky;
-}
+
 .About-Me {
-    color: var(--green);
-    border: 20px 20px 20px 20px;
+    border: var(--20px)
 
 }
 .section {
@@ -145,9 +148,48 @@ width: 50%
 }
 .About-Me p, .Selected-Works p, .Contact-me p {
     padding: 20px 45px;
+    color: var(--text);
+    text-align: left;
 }
 
 .Selected-Works {
-    color: var(--green);
-    border: 20px 20px 20px 20px
+    color: var(--text);
+    border: var(--20px);
+}
+
+.images {
+    opacity: grey;
+  }
+
+.zard img, .youmu img {
+    display: block;
+    height: 200px;
+    margin: 10px auto;
+    width: 250px;
+    align-items: center;
+    order: -1;
+    text-align: right;
+}
+
+.zard, .myon {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+    font-size: large;
+    display: flex;
+}
+
+.floatleft {
+
+}
+.image.big {
+    size: 30px;
+    opacity: inherit;
+  }
+
+.footer p{
+    color: var(--text)
 }
