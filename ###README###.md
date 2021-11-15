@@ -18,8 +18,7 @@ I also learned how flex categories worked which also helped make the website a l
 [x] Figure out how we can use flex boxes to make the website more     compact.
 [x] Find some form of selected works I guess?
 [x] Find a Good website to model
-[x] Flesh out readme some more.
-    [x] Reasearch popular readmes.
+[x] Flesh out readme some more..
     [x] Write a dev process.
     [x] Write where I got my photos.
 
