@@ -114,7 +114,7 @@ header {
 }
 
 .hero {
-background-image: url("");
+background-image: url("./images/hero.jpg");
 width: 620px;
 height: 600px;
 border-width: 1px;
